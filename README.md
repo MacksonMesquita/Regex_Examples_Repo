@@ -49,6 +49,12 @@ Este repositório tem como foco, armazenar exemplos de regex a serem usadas e im
   ##### Validação de CEP.
         '(^[0-9]{5})-?([0-9]{3}$)'
 
+  ##### Validação de strings sem caracteres especiais.
+        '^[ 0-9a-zA-Z\b]+$'
+
+  ##### Validação de hora.
+        '^([0-9]{1,2}):([0-5][0-9])\s?([aApP][mM])?$'
+
   ##### Validação de senha -> Senha de no mínimo 6 caracteres, pelo menos uma letra maiúscula, pelo menos uma letra minúscula, pelo menos um número, pelo menos um caractere especial.
         '(?=^.{6,}$)((?=.*\w)(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[|!"$%&#\/\(\)\?\^\'\\\+\-\*]))^.*'
         
