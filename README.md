@@ -3,7 +3,7 @@
 #### Este repositório tem como foco, armazenar exemplos de regex a serem usadas e implementadas, afim de facilitar utilizações futuras. 
 
 
-#### OBS: This repo don't have language support
+#### OBS: This repo don't have language support 😢
 
 ![](https://i.imgur.com/waxVImv.png)
 
@@ -64,4 +64,4 @@ Temos inúmeros tipos de regex; para senhas, e-mails, CPF, strings. Cada uma, co
 
  ![](https://i.imgur.com/waxVImv.png)
 
-## ⚠️DETALHE: Vale lembrar que, as regex não validam de fato algo, apenas limitam que caracteres errados entrem, em outras palavras, validam o formato, não o documento.
+### ⚠️DETALHE: Vale lembrar que, as regex não validam de fato algo, apenas limitam que caracteres errados entrem, em outras palavras, validam o formato, não o documento.
