@@ -25,8 +25,8 @@
     Um dos requisitos para que o usuário consiga se registrar, é o **CPF**. Mas, sabendo como os usuários são, e por questões de segurança, é desejável limitar a entrada de certos dados. Por exemplo:
     Em um **CPF** são permitidos apenas números e pontuações básica, entretanto, se você deixar livre a utilização de qualquer caractere, muito provavelmente os usuários vão inserir caracteres especiais, como "#" ou "!".
 
-Uma regex serve justamente para invalidar e não permitir estas entradas.
-Temos inúmeros tipos de regex; para senhas, e-mails, CPF, strings. Cada uma, com suas respectivas aparências.
+**Uma regex serve justamente para invalidar e não permitir estas entradas.
+Temos inúmeros tipos de regex; para senhas, e-mails, CPF, strings. Cada uma, com suas respectivas aparências.**
 
 <br />
 
