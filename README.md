@@ -71,18 +71,16 @@ Este repositório tem como foco, armazenar exemplos de regex a serem usadas e im
 
 ### ⚠️DETALHE: Vale lembrar que, as regex não validam de fato algo, apenas limitam que caracteres errados entrem, em outras palavras, validam o formato, não o documento.
 
- ![](https://i.imgur.com/waxVImv.png)
-
  <br />
 
-## Processo de formação de uma regex
+## Processo de formação de uma regex 🏗️
 
 Eu sei que é muito legal você simplesmente pegar uma regex pronta, colocar no seu código e vê-la funcionar, sem se preocupar com mais nada.
 Entretanto se quiser aprender como montar a sua regex, segue abaixo alguns breves tutoriais, pois como pode ver, as regex podem ser altamente customizáveis!
 
 <br />
 
-### Classes
+### Classes 🏛️
 
 As regexes são expressadas por classes, sejam elas de números, letras ou simbolos, as classes são representadas por por colchetes -> []
 Dentro de uma classe, você pode colocar as letras, números ou simbolos que você deseja banir ou aceitar:
@@ -100,7 +98,7 @@ Vale lembrar que fora da classe, o hífen é avaliado como um hífen (valor sem�
 
 <br />
 
-### Case sensitive
+### Case sensitive 💌
 
 Com certeza você já deve ter ouvido falar deste termo, mas caso contrário, não se preocupe.
 *Case sensitive* é o termo utilizado para se referir a diferença de sentido entre cases (maiúsculo e mínusculo), ou seja, de acordo com a case da letra (o jeito a qual ela se apresenta)
@@ -115,7 +113,7 @@ Como pode perceber, estou dizendo que na case maiúscula eu quero as letras de A
 
 <br />
 
-### Alterador de sentido
+### Alterador de sentido 🥶
 
 Quando fazemos uma regex, existem oque chamamos de alterador de sentido, um deles é a barra invertida -> \
 esta barra nos diz que tudo oque vir depois dela, o seu sentido natural será alterado. Em um exemplo, 
@@ -147,7 +145,7 @@ Eles representam respectivamente:
 
 <br />
 
-### Contadores 
+### Contadores 🤑
 
 Os contadores servem para mostar quantas vezes uma determinada coisa pode aparecer em um determinado local, vamos supor:
 
@@ -178,3 +176,41 @@ Para isso, existe a equação {n, m} ou {5, 12} -> onde n = mínimo; e m = máxi
 
 #### 
      \d{5,12} -> exemplo  
+
+
+Legal, mas ainda não acaba ai, ainda no sistema dos contadores, temos o "+".
+
+Imagine que voc~e esta validando um nome completo de uma pessoa, em um nome completo, você tem  letra maiúsculas e minúsculas, alem de espaços em branco, 
+você pode pensar em fazer isso: 
+
+###
+    [A-Za-z\s]
+
+Mas se fizer isto, será selecionada cada letra e espaço individualmente. 
+<br />
+No fim, queremos que seja selecionado os blocos inteiros que corresponderão aos nomes, correto? Então é aqui que entra o "+"
+
+#### Oque ele irá fazer, é agrupar um determinada classe 
+    [A-Za-z\s]+
+
+<br />
+
+### Âncoras ⚓
+
+Por fim, para montar uma regex, voc~e precisará de âncoras, as quais servem para que você delimite um começo e um fim em uma expressão regular, Ambas seguem um padrão
+e raramente sairam do padrão, tal como: 
+
+###
+    âncora no inicio + expressão + âncora ao final 
+
+
+As âncoras responsáveis por delimitar um inicio e um fim, são os simbolos "^" e "$"
+
+####
+    ^<minha-expressão>$
+
+<br/>
+
+ ![](https://i.imgur.com/waxVImv.png)
+
+ ### Como você pode ver, não é tão dificil de entender como uma regex é formada, obviamnete não coloquei tudo sobre as mesmas, pois exixtem milhares de simbolos e combinações possíveis a serem feitas. Mas o processo a qual uma regex é formada, e suas principais características foram mostradas no arquivo a seguir.
