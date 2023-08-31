@@ -18,6 +18,8 @@ Este repositório tem como foco, armazenar exemplos de regex a serem usadas e im
   Regex ou RE -> regular expressions -> expressões regulares.
   Nada mais são do que um conjunto de instruções que invalidam a entrada de dados que não sejam adeptos a determinadas circunstâncias. Ou seja, nada mais é, do que um padrão que limita certas entradas de dados.
 
+  <br/>
+
   * Você pode estar se perguntando, para que servem as expressões regulares, ou porque eu deveria usa-las em meus códigos.
 
     Imagine que um sistema de cadastro bancário está sendo feito pela sua empresa. Você, um back-end, é encarregado de realizar a lógica por trás das validações.
@@ -109,7 +111,7 @@ No caso de criação de classes usando a case sensitive, é necessário colocar 
 #### 
      [A-Za-z]
 
-Como pode perceber, estou dizendo que na case maiúscula eu quero as letras de A a Z, enquanto na case minúscula eu quero as letars de a a z.
+Como pode perceber, estou dizendo que na case maiúscula eu quero as letras de A a Z, enquanto na case minúscula as letars de a a z.
 
 <br />
 
@@ -159,6 +161,8 @@ Você pode usar números dentro de chaves para mostrar quantas vezes uma coisa a
 #### 
      \d{3}\.\d{3}\.\d{3}\-\d{2}
 
+<br/>
+
 * Legal, mas e quando você não sabe quantas vezes os números apareceram? Não se preocupe, para isso use o {n,}
   <br />
   o qual significa que determinado número pode aparcer "n" vezes em sua regex.
@@ -174,17 +178,22 @@ Para isso, existe a equação {n, m} ou {5, 12} -> onde n = mínimo; e m = máxi
 <br />
 **mínimo 5 vezes com máximo de 12.**
 
+<br/>
+
 #### 
      \d{5,12} -> exemplo  
 
+<br/>
 
-Legal, mas ainda não acaba ai, ainda no sistema dos contadores, temos o "+".
+Mas calma que ainda não acaba ai, ainda no sistema dos contadores, temos o "+".
 
 Imagine que voc~e esta validando um nome completo de uma pessoa, em um nome completo, você tem  letra maiúsculas e minúsculas, alem de espaços em branco, 
 você pode pensar em fazer isso: 
 
 ###
     [A-Za-z\s]
+
+<br/>
 
 Mas se fizer isto, será selecionada cada letra e espaço individualmente. 
 <br />
@@ -202,7 +211,8 @@ e raramente sairam do padrão, tal como:
 
 ###
     âncora no inicio + expressão + âncora ao final 
-
+    
+<br/>
 
 As âncoras responsáveis por delimitar um inicio e um fim, são os simbolos "^" e "$"
 
