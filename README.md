@@ -70,3 +70,111 @@ Este repositório tem como foco, armazenar exemplos de regex a serem usadas e im
  ![](https://i.imgur.com/waxVImv.png)
 
 ### ⚠️DETALHE: Vale lembrar que, as regex não validam de fato algo, apenas limitam que caracteres errados entrem, em outras palavras, validam o formato, não o documento.
+
+ ![](https://i.imgur.com/waxVImv.png)
+
+ <br />
+
+## Processo de formação de uma regex
+
+Eu sei que é muito legal você simplesmente pegar uma regex pronta, colocar no seu código e vê-la funcionar, sem se preocupar com mais nada.
+Entretanto se quiser aprender como montar a sua regex, segue abaixo alguns breves tutoriais, pois como pode ver, as regex podem ser altamente customizáveis!
+
+<br />
+
+### Classes
+
+As regexes são expressadas por classes, sejam elas de números, letras ou simbolos, as classes são representadas por por colchetes -> []
+Dentro de uma classe, você pode colocar as letras, números ou simbolos que você deseja banir ou aceitar:
+
+#### 
+     [0123456789]
+
+Oque está sendo representado na classe acima, nada mais é do que uma ordem, que diz que, você quer permitir os números "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
+entretanto, você pode perceber que isso ficaria enorme se por acaso fosse aceito os números de o a 100 em um determinado local. Para evitar isso , utilizamos o ifen.
+
+#### Deste modo, você está dizendo a mesma coisa da classe acima, porém com um aspecto muito mais *clean*
+     [0-9]
+
+Vale lembrar que fora da classe, o hífen é avaliado como um hífen (valor semântico), mas como dito anteriormente, dentro ele é avaliado como um range.
+
+<br />
+
+### Case sensitive
+
+Com certeza você já deve ter ouvido falar deste termo, mas caso contrário, não se preocupe.
+*Case sensitive* é o termo utilizado para se referir a diferença de sentido entre cases (maiúsculo e mínusculo), ou seja, de acordo com a case da letra (o jeito a qual ela se apresenta)
+o sentido dela é alterado, logo -> **A** -> é diferente de -> **a**.
+
+No caso de criação de classes usando a case sensitive, é necessário colocar ambas funções para que sejam validadas.
+
+#### 
+     [A-Za-z]
+
+Como pode perceber, estou dizendo que na case maiúscula eu quero as letras de A a Z, enquanto na case minúscula eu quero as letars de a a z.
+
+<br />
+
+### Alterador de sentido
+
+Quando fazemos uma regex, existem oque chamamos de alterador de sentido, um deles é a barra invertida -> \
+esta barra nos diz que tudo oque vir depois dela, o seu sentido natural será alterado. Em um exemplo, 
+o "d" sozinho, é interpretado como uma letra, mas quando colocamos a barra invertida antes, ele se transforma em um "pegador de caracteres alfanuméricos".
+
+#### 
+     [d]
+     [\d]
+
+* Aqui vai algumas caracteres além do "d", que com a barra invertida tem o seu sentido alterado:
+
+#### 
+     [\s]
+     [\w]
+     [\.]
+     [\S]
+     [\W]
+
+Eles representam respectivamente:
+
+#### 
+     Considera espaços em branco como parte dos elementos requisitados
+     Representa world characters, ou seja, libera todas as letras, números e underlines
+     Permite TUDO, literalmente tudo
+     Não permite espaços em branco como parte dos elemntos requisitados
+     Não permite worldcharacters como parte dos elementos requisitados
+
+* Isso mesmo, para fazer uma negação no mundo das regexes, basta apenas colocar a letra desejada como maiúscula, desde que seja seguida por uma barra invertida.
+
+<br />
+
+### Contadores 
+
+Os contadores servem para mostar quantas vezes uma determinada coisa pode aparecer em um determinado local, vamos supor:
+
+Você esta validando um cep CPF, ao invés de colocar
+
+#### 
+     \ddd\.-\ddd\.-\ddd\-\dd
+
+Você pode usar números dentro de chaves para mostrar quantas vezes uma coisa aparece, neste caso: 
+
+#### 
+     \d{3}\.\d{3}\.\d{3}\-\d{2}
+
+* Legal, mas e quando você não sabe quantas vezes os números apareceram? Não se preocupe, para isso use o {n,}
+  <br />
+  o qual significa que determinado número pode aparcer "n" vezes em sua regex.
+  <br />
+  *Vale lembrar que será no lugar do "n", que você colocará a quantidade de vezes que o elemento poderá aparecer.*
+
+**Dentro deste caso, você pode colocar que determinada coisa aparecerá no mínimo {5,}.** 
+
+
+Todavia, se existe um limite de caracteres para determinada coisa, você deverá colocar o limite destes caracteres, obviamnete.
+<br />
+Para isso, existe a equação {n, m} ou {5, 12} -> onde n = mínimo; e m = máximo, ou seja:
+<br />
+**mínimo 5 vezes com máximo de 12.**
+
+#### 
+     \d{5,12} -> exemplo  
