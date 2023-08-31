@@ -1,4 +1,4 @@
-# Regex Examples
+# Regexes
 
 Este repositório tem como foco, armazenar exemplos de regex a serem usadas e implementadas, afim de facilitar utilizações futuras. 
 <br />
@@ -93,7 +93,7 @@ Dentro de uma classe, você pode colocar as letras, números ou simbolos que voc
 Oque está sendo representado na classe acima, nada mais é do que uma ordem, que diz que, você quer permitir os números "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
 entretanto, você pode perceber que isso ficaria enorme se por acaso fosse aceito os números de o a 100 em um determinado local. Para evitar isso , utilizamos o ifen.
 
-#### Deste modo, você está dizendo a mesma coisa da classe acima, porém com um aspecto muito mais *clean*
+#### Deste modo, você está dizendo a mesma coisa da classe acima, porém com um aspecto muito mais *clean*.
      [0-9]
 
 Vale lembrar que fora da classe, o hífen é avaliado como um hífen (valor semântico), mas como dito anteriormente, dentro ele é avaliado como um range.
@@ -137,11 +137,11 @@ o "d" sozinho, é interpretado como uma letra, mas quando colocamos a barra inve
 Eles representam respectivamente:
 
 #### 
-     Considera espaços em branco como parte dos elementos requisitados
-     Representa world characters, ou seja, libera todas as letras, números e underlines
-     Permite TUDO, literalmente tudo
-     Não permite espaços em branco como parte dos elemntos requisitados
-     Não permite worldcharacters como parte dos elementos requisitados
+     Considera espaços em branco como parte dos elementos requisitados.
+     Representa world characters, ou seja, libera todas as letras, números e underlines.
+     Permite TUDO, literalmente tudo.
+     Não permite espaços em branco como parte dos elemntos requisitados.
+     Não permite worldcharacters como parte dos elementos requisitados.
 
 * Isso mesmo, para fazer uma negação no mundo das regexes, basta apenas colocar a letra desejada como maiúscula, desde que seja seguida por uma barra invertida.
 
@@ -187,26 +187,26 @@ Para isso, existe a equação {n, m} ou {5, 12} -> onde n = mínimo; e m = máxi
 
 Mas calma que ainda não acaba ai, ainda no sistema dos contadores, temos o "+".
 
-Imagine que voc~e esta validando um nome completo de uma pessoa, em um nome completo, você tem  letra maiúsculas e minúsculas, alem de espaços em branco, 
-você pode pensar em fazer isso: 
+Imagine que você esta validando um nome completo de uma pessoa, em um nome completo, em sua composição você tem letra maiúsculas e minúsculas, além de espaços em branco. 
+Você pode pensar que é muito simples, e surante o processo fazer isso: 
 
 ###
     [A-Za-z\s]
 
 <br/>
 
-Mas se fizer isto, será selecionada cada letra e espaço individualmente. 
+Todavia se fizer isto, será selecionada cada letra e espaço individualmente. 
 <br />
-No fim, queremos que seja selecionado os blocos inteiros que corresponderão aos nomes, correto? Então é aqui que entra o "+"
+No fim, queremos que seja selecionado os blocos inteiros que corresponderão aos nomes, correto? Então é aqui que entra o "+".
 
-#### Oque ele irá fazer, é agrupar um determinada classe 
+#### Oque ele irá fazer, é agrupar um determinada classe. 
     [A-Za-z\s]+
 
 <br />
 
 ### Âncoras ⚓
 
-Por fim, para montar uma regex, voc~e precisará de âncoras, as quais servem para que você delimite um começo e um fim em uma expressão regular, Ambas seguem um padrão
+Por fim, para montar uma regex, você precisará de âncoras, as quais servem para que você delimite um começo e um fim em uma expressão regular, Ambas seguem um padrão
 e raramente sairam do padrão, tal como: 
 
 ###
