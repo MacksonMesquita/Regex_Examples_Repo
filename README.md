@@ -7,7 +7,7 @@ Este repositório tem como foco, armazenar exemplos de regex a serem usadas e im
 
 * OBS: This repo don't have language support 😢
 * A utilização de todo o conteúdo encontrado aqui, é livre, e pode ser copiada sem nenhuma intervenção.
-* Algumas regexes, dependendo do local onde você se encontra (paises ou continentes diferentes) podem ou não, precisarem de alterações. -> **As regexes foram baseadas no método de comunicação brasileiros.,** portando em suas presenças normas e instruções comunicativas.
+* Algumas regexes, dependendo do local onde você se encontra (paises ou continentes diferentes) podem ou não, precisarem de alterações. -> **As regexes foram baseadas no método de comunicação brasileiros,** portando em suas presenças normas e instruções comunicativas.
 
   ![](https://i.imgur.com/waxVImv.png)
 
@@ -23,10 +23,16 @@ Este repositório tem como foco, armazenar exemplos de regex a serem usadas e im
   * Você pode estar se perguntando, para que servem as expressões regulares, ou porque eu deveria usa-las em meus códigos.
 
     Imagine que um sistema de cadastro bancário está sendo feito pela sua empresa. Você, um back-end, é encarregado de realizar a lógica por trás das validações.
-    Um dos requisitos para que o usuário consiga se registrar, é o **CPF**. Mas, sabendo como os usuários são, e por questões de segurança, é desejável limitar a entrada de certos dados. Por exemplo:
+    Um dos requisitos para que o usuário consiga se registrar, é o **CPF**.
+    <br />
+    Mas sabendo como os usuários são, e por questões de segurança, é desejável limitar a entrada de certos dados.
+    <br />
+    Por exemplo:
+    <br />
     Em um **CPF** são permitidos apenas números e pontuações básica, entretanto, se você deixar livre a utilização de qualquer caractere, muito provavelmente os usuários vão inserir caracteres especiais, como "#" ou "!".
 
  **Uma regex serve justamente para invalidar e não permitir estas entradas.
+<br />
  Temos inúmeros tipos de regex; para senhas, e-mails, CPF, strings. Cada uma, com suas respectivas aparências.**
 
 <br />
@@ -84,14 +90,22 @@ Entretanto se quiser aprender como montar a sua regex, segue abaixo alguns breve
 
 ### Classes 🏛️
 
-As regexes são expressadas por classes, sejam elas de números, letras ou simbolos, as classes são representadas por por colchetes -> []
-Dentro de uma classe, você pode colocar as letras, números ou simbolos que você deseja banir ou aceitar:
+As regexes são expressadas por classes, compostas por números, letras ou simbolos, as classes são representadas por colchetes -> [ ]
+<br />
+dentro de uma classe, você pode colocar as letras, números ou simbolos que você deseja banir ou aceitar.
 
 #### 
      [0123456789]
 
-Oque está sendo representado na classe acima, nada mais é do que uma ordem, que diz que, você quer permitir os números "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
-entretanto, você pode perceber que isso ficaria enorme se por acaso fosse aceito os números de o a 100 em um determinado local. Para evitar isso , utilizamos o ifen.
+<br />
+
+Oque está sendo representado na classe acima, nada mais é do que uma ordem.
+<br />
+A qual diz que você quer permitir os números " 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ".
+<br />
+entretanto, você pode perceber que isso ficaria enorme se por acaso fosse aceito os números de o a 100 em um determinado local. 
+<br /> 
+Para evitar isso, utilizamos o ifen.
 
 #### Deste modo, você está dizendo a mesma coisa da classe acima, porém com um aspecto muito mais *clean*.
      [0-9]
@@ -103,6 +117,7 @@ Vale lembrar que fora da classe, o hífen é avaliado como um hífen (valor sem�
 ### Case sensitive 💌
 
 Com certeza você já deve ter ouvido falar deste termo, mas caso contrário, não se preocupe.
+<br />
 *Case sensitive* é o termo utilizado para se referir a diferença de sentido entre cases (maiúsculo e mínusculo), ou seja, de acordo com a case da letra (o jeito a qual ela se apresenta)
 o sentido dela é alterado, logo -> **A** -> é diferente de -> **a**.
 
@@ -117,8 +132,9 @@ Como pode perceber, estou dizendo que na case maiúscula eu quero as letras de A
 
 ### Alterador de sentido 🥶
 
-Quando fazemos uma regex, existem oque chamamos de alterador de sentido, um deles é a barra invertida -> \
-esta barra nos diz que tudo oque vir depois dela, o seu sentido natural será alterado. Em um exemplo, 
+Quando fazemos uma regex, existem oque chamamos de alterador de sentido, um deles é a barra invertida.
+<br />
+Esta barra nos diz que tudo oque vir depois dela, o seu sentido natural será alterado. Em um exemplo, 
 o "d" sozinho, é interpretado como uma letra, mas quando colocamos a barra invertida antes, ele se transforma em um "pegador de caracteres alfanuméricos".
 
 #### 
