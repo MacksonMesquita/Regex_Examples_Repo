@@ -5,9 +5,13 @@ Este repositório tem como foco, armazenar exemplos de regex a serem usadas e im
 
 ### Alguns alertas:
 
-* OBS: This repo don't have language support 😢
+> OBS: This repo don't have language support 😢
+
+<br />
+
 * A utilização de todo o conteúdo encontrado aqui, é livre, e pode ser copiada sem nenhuma intervenção.
-* Algumas regexes, dependendo do local onde você se encontra (paises ou continentes diferentes) podem ou não, precisarem de alterações. -> **As regexes foram baseadas no método de comunicação brasileiros,** portando em suas presenças normas e instruções comunicativas.
+* Algumas regexes, dependendo do local onde você se encontra (paises ou continentes diferentes) podem ou não, precisarem de alterações.
+**As regexes foram baseadas no método de comunicação brasileiros,** portando em suas presenças normas e instruções comunicativas.
 
   ![](https://i.imgur.com/waxVImv.png)
 
