@@ -81,7 +81,7 @@ Este repositório tem como foco, armazenar exemplos de regex a serem usadas e im
 
  ![](https://i.imgur.com/waxVImv.png)
 
-### ⚠️DETALHE: Vale lembrar que, as regex não validam de fato algo, apenas limitam que caracteres errados entrem, em outras palavras, validam o formato, não o documento.
+### ⚠️DETALHE: Vale lembrar que, as regex não validam de fato algo, apenas limitam que caracteres errados entrem. Em outras palavras, validam o formato, não o documento!
 
  <br />
 
