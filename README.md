@@ -5,7 +5,7 @@ Este repositório tem como foco, armazenar exemplos de regex a serem usadas e im
 
 ### Alguns alertas:
 
-> OBS: This repo don't have language support 😢
+> OBS: This repo don't have language support, because the regexes can be changed by the language or country 😢
 
 <br />
 
