@@ -243,4 +243,4 @@ As âncoras responsáveis por delimitar um inicio e um fim, são os simbolos "^"
 
  ![](https://i.imgur.com/waxVImv.png)
 
- ### Como você pode ver, não é tão dificil de entender como uma regex é formada, obviamnete não coloquei tudo sobre as mesmas, pois exixtem milhares de simbolos e combinações possíveis a serem feitas. Mas o processo a qual uma regex é formada, e suas principais características foram mostradas no arquivo a seguir.
+ ### Como você pode ver, não é tão dificil de entender como uma regex é formada, obviamnete não coloquei tudo sobre as mesmas, pois exixtem milhares de simbolos e combinações possíveis a serem feitas. Mas o processo a qual uma regex é formada, e suas principais características foram mostradas no arquivo.
