@@ -37,7 +37,9 @@ Este repositório tem como foco, armazenar exemplos de regex a serem usadas e im
 
  **Uma regex serve justamente para invalidar e não permitir estas entradas.
 <br />
- Temos inúmeros tipos de regex; para senhas, e-mails, CPF, strings. Cada uma, com suas respectivas aparências.**
+ Temos inúmeros tipos de regex. 
+ <br />
+ Para a senhas, e-mails, CPF, strings e muito mais. Cada uma, com suas respectivas aparências.**
 
 <br />
 
